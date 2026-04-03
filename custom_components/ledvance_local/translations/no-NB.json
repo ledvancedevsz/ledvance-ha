@@ -32,6 +32,13 @@
                 "title": "Finn enhetens IP-adresse",
                 "description": "{device_name}Tuya cloud gir ikke lokale IP-adresser"
             },
+            "discover_local": {
+                "title": "Finn enheten din på det lokale nettverket",
+                "description": "Velg en oppdaget enhet for å forhåndsutfylle enhets-ID og IP-adresse, eller velg det manuelle alternativet for å angi detaljene selv.",
+                "data": {
+                    "discovered_device": "Oppdaget enhet"
+                }
+            },
             "local": {
                 "title": "Konfigurer din lokale Tuya enhet",
                 "description": "{device_name}[Følg instruksjonene her for å finne enhets-id og den lokale nøkkelen.]({device_details_url})",

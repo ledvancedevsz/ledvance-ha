@@ -32,6 +32,13 @@
                 "title": "Localize o endereço IP do dispositivo",
                 "description": "{device_name}A nuvem Tuya não fornece endereços IP locais"
             },
+            "discover_local": {
+                "title": "Encontre seu dispositivo na rede local",
+                "description": "Escolha um dispositivo detectado para preencher previamente o ID do dispositivo e o endereço IP, ou escolha a opção manual para inserir os detalhes manualmente.",
+                "data": {
+                    "discovered_device": "Dispositivo detectado"
+                }
+            },
             "local": {
                 "title": "Configure seu dispositivo Ledvance Local",
                 "description": "{device_name}[Siga estas instruções para encontrar o ID do seu dispositivo e a chave local.]({device_details_url})",

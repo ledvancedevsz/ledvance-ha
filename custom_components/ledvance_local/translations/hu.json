@@ -32,6 +32,13 @@
                 "title": "Keresse meg az eszköz IP-címét",
                 "description": "{device_name}A Tuya felhő nem biztosít helyi IP-címeket"
             },
+            "discover_local": {
+                "title": "Keresse meg az eszközét a helyi hálózaton",
+                "description": "Válasszon egy felfedezett eszközt az eszközazonosító és az IP-cím előzetes kitöltéséhez, vagy válassza a kézi lehetőséget az adatok manuális megadásához.",
+                "data": {
+                    "discovered_device": "Felfedezett eszköz"
+                }
+            },
             "local": {
                 "title": "Állítsd be a helyi Tuya eszközöd",
                 "description": "{device_name}[Kövesd ezeket az utasításokat, hogy megtaláld az eszköz azonosítóját (device_id) és a helyi kulcsot (local_key).]({device_details_url})",

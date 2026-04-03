@@ -32,6 +32,13 @@
                 "title": "Temukan alamat IP perangkat",
                 "description": "{device_name}Tuya cloud tidak menyediakan alamat IP lokal jadi sekarang kami harus mencari di jaringan lokal Anda untuk menemukan perangkat. "
             },
+            "discover_local": {
+                "title": "Temukan perangkat Anda di jaringan lokal",
+                "description": "Pilih perangkat yang terdeteksi untuk mengisi terlebih dahulu ID perangkat dan alamat IP, atau pilih opsi manual untuk memasukkan detailnya secara manual.",
+                "data": {
+                    "discovered_device": "Perangkat terdeteksi"
+                }
+            },
             "local": {
                 "title": "Konfigurasikan perangkat Ledvance Local Anda",
                 "description": "{device_name}[Ikuti petunjuk ini untuk menemukan ID perangkat dan kunci lokal.]({device_details_url})",

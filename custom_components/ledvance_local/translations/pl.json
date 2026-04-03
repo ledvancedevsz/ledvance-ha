@@ -32,6 +32,13 @@
                 "title": "Znajdź adres IP urządzenia",
                 "description": "{device_name}Chmura Tuya nie udostępnia lokalnych adresów IP"
             },
+            "discover_local": {
+                "title": "Znajdź swoje urządzenie w sieci lokalnej",
+                "description": "Wybierz wykryte urządzenie, aby wstępnie wypełnić identyfikator urządzenia i adres IP, albo wybierz opcję ręczną, aby samodzielnie wprowadzić dane.",
+                "data": {
+                    "discovered_device": "Wykryte urządzenie"
+                }
+            },
             "local": {
                 "title": "Skonfiguruj swoje urządzenie Ledvance Local",
                 "description": "{device_name}[Postępuj zgodnie z instrukcjami by znaleźć swoje Device ID oraz Local key.]({device_details_url})",

@@ -32,6 +32,13 @@
                 "title": "デバイスのIPアドレスを特定する",
                 "description": "{device_name}Tuya クラウドはローカル IP アドレスを提供しないため、ローカル ネットワークを検索してデバイスを見つける必要があります。"
             },
+            "discover_local": {
+                "title": "ローカルネットワークでデバイスを見つける",
+                "description": "検出されたデバイスを選択してデバイス ID と IP アドレスを事前入力するか、手動オプションを選択して詳細を自分で入力してください。",
+                "data": {
+                    "discovered_device": "検出されたデバイス"
+                }
+            },
             "local": {
                 "title": "Ledvance Localのデバイスを設定する",
                 "description": "{device_name}[これらの手順に従ってデバイスIDとローカルキーを見つけてください。]({device_details_url})",

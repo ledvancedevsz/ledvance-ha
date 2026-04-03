@@ -32,6 +32,13 @@
                 "title": "Suchen Sie die IP-Adresse des Geräts",
                 "description": "{device_name}Die Tuya-Cloud stellt keine lokalen IP-Adressen bereit"
             },
+            "discover_local": {
+                "title": "Finden Sie Ihr Gerät im lokalen Netzwerk",
+                "description": "Wählen Sie ein gefundenes Gerät aus, um die Geräte-ID und IP-Adresse vorab auszufüllen, oder wählen Sie die manuelle Option, um die Angaben selbst einzugeben.",
+                "data": {
+                    "discovered_device": "Gefundenes Gerät"
+                }
+            },
             "local": {
                 "title": "Konfigurieren Sie Ihr Ledvance Local-Gerät",
                 "description": "{device_name}[Folgen Sie diesen Anweisungen, um Ihre Geräte-ID und Ihren lokalen Schlüssel zu finden.]({device_details_url})",

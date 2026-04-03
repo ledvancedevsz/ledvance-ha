@@ -32,6 +32,13 @@
                 "title": "Localice la dirección IP del dispositivo",
                 "description": "{device_name}Tuya Cloud no proporciona direcciones IP locales por lo que ahora debemos buscar en su red local para encontrar el dispositivo. "
             },
+            "discover_local": {
+                "title": "Encuentra tu dispositivo en la red local",
+                "description": "Elige un dispositivo detectado para rellenar previamente el ID del dispositivo y la dirección IP, o elige la opción manual para introducir los datos tú mismo.",
+                "data": {
+                    "discovered_device": "Dispositivo detectado"
+                }
+            },
             "local": {
                 "title": "Configura tu dispositivo Ledvance Local",
                 "description": "{device_name}[Siga estas instrucciones para encontrar la identificación de su dispositivo y la clave local.]({device_details_url})",

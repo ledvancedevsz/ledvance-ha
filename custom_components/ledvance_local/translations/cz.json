@@ -32,6 +32,13 @@
                 "title": "Najděte IP adresu zařízení",
                 "description": "{device_name}Cloud Tuya neposkytuje místní IP adresy"
             },
+            "discover_local": {
+                "title": "Najděte zařízení v místní síti",
+                "description": "Vyberte nalezené zařízení pro předvyplnění ID zařízení a IP adresy nebo zvolte ruční možnost a údaje zadejte sami.",
+                "data": {
+                    "discovered_device": "Nalezené zařízení"
+                }
+            },
             "local": {
                 "title": "Nastavte sve lokální zařízení",
                 "description": "{device_name}[Postupujte podle tohoto návodu pro získaní identifikátoru zařízení (device_id) a lokálního klíče (local_key).]({device_details_url})",
