@@ -91,6 +91,11 @@
                 "manual": "Oppgi informasjon om enhetstilkobling manuelt.",
                 "cloud_fresh_login": "SmartLife sky-assistert enhetsoppsett med ny pålogging."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "manual_input": "Oppgi detaljene manuelt"
+            }
         }
     },
     "options": {

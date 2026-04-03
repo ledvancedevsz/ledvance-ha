@@ -91,6 +91,11 @@
                 "manual": "Εισάγετε χειροκίνητα τις πληροφορίες για τη σύνδεση της συσκευής.",
                 "cloud_fresh_login": "Εγκατάσταση συσκευής υποβοηθούμενη απο το SmartLife cloud με νέο λογαριασμό."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "manual_input": "Εισαγάγετε τα στοιχεία χειροκίνητα"
+            }
         }
     },
     "options": {
@@ -608,9 +613,9 @@
                     "russian": "Русский",
                     "spanish": "Español",
                     "turkish": "Türkçe",
-                     "polish": "Polski",
+                    "polish": "Polski",
                     "vietnamese": "Tiếng Việt"
-               }
+                }
             },
             "light_mode": {
                 "name": "Λειτουργία φωτισμού",

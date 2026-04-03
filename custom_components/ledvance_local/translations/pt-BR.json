@@ -91,6 +91,11 @@
                 "manual": "Forneça manualmente informações de conexão do dispositivo.",
                 "cloud_fresh_login": "Configuração do dispositivo assistido pela nuvem SmartLife com novo login."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "manual_input": "Inserir detalhes manualmente"
+            }
         }
     },
     "options": {

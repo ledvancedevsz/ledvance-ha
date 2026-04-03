@@ -91,6 +91,11 @@
                 "manual": "Manually provide device connection information.",
                 "cloud_fresh_login": "SmartLife cloud-assisted device setup with fresh login."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "manual_input": "Enter details manually"
+            }
         }
     },
     "options": {

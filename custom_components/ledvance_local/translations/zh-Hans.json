@@ -91,6 +91,11 @@
                 "manual": "手动提供设备连接信息。",
                 "cloud_fresh_login": "SmartLife云辅助设备设置（新登录）。"
             }
+        },
+        "discovered_device": {
+            "options": {
+                "manual_input": "手动输入详细信息"
+            }
         }
     },
     "options": {

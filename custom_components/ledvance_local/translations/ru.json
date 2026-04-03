@@ -91,6 +91,11 @@
                 "manual": "Вручную укажите информацию о подключении устройства.",
                 "cloud_fresh_login": "Войдите в другую учетную запись SmartLife или Tuya."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "manual_input": "Введите данные вручную"
+            }
         }
     },
     "options": {

@@ -91,6 +91,11 @@
                 "manual": "Ručně zadejte informace o připojení zařízení.",
                 "cloud_fresh_login": "Přihlaste se pomocí jiného účtu SmartLife nebo Tuya."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "manual_input": "Zadejte údaje ručně"
+            }
         }
     },
     "options": {

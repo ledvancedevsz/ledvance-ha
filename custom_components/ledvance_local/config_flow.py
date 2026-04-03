@@ -1,6 +1,9 @@
 import asyncio
+import json
 import logging
 from collections import OrderedDict
+from functools import lru_cache
+from pathlib import Path
 from typing import Any
 
 import tinytuya
@@ -50,7 +53,45 @@ DEVICE_DETAILS_URL = (
     "#finding-your-device-id-and-local-key"
 )
 CONF_DISCOVERED_DEVICE = "discovered_device"
-DISCOVERY_MANUAL = "__manual__"
+DISCOVERY_MANUAL = "manual_input"
+TRANSLATIONS_DIR = Path(__file__).with_name("translations")
+
+
+def _translation_candidates(language: str | None) -> list[str]:
+    candidates = [language or "en"]
+    if language and "-" in language:
+        base_language = language.split("-", maxsplit=1)[0]
+        if base_language not in candidates:
+            candidates.append(base_language)
+    if "en" not in candidates:
+        candidates.append("en")
+    return candidates
+
+
+@lru_cache(maxsize=None)
+def _load_translation_file(language: str) -> dict[str, Any]:
+    path = TRANSLATIONS_DIR / f"{language}.json"
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8") as translation_file:
+        return json.load(translation_file)
+
+
+def get_selector_option_label(
+    language: str | None, selector_key: str, option_value: str
+) -> str:
+    """Return the translated label for a selector option."""
+    for candidate in _translation_candidates(language):
+        translation = _load_translation_file(candidate)
+        label = (
+            translation.get("selector", {})
+            .get(selector_key, {})
+            .get("options", {})
+            .get(option_value)
+        )
+        if label:
+            return label
+    return option_value
 
 
 class ConfigFlowHandler(ConfigFlow, domain=DOMAIN):
@@ -110,6 +151,11 @@ class ConfigFlowHandler(ConfigFlow, domain=DOMAIN):
         self.__local_devices = {
             device["id"]: device for device in discovered_devices if device.get("id")
         }
+        manual_label = get_selector_option_label(
+            getattr(self.hass.config, "language", "en"),
+            CONF_DISCOVERED_DEVICE,
+            DISCOVERY_MANUAL,
+        )
         device_list = [
             SelectOptionDict(value=device["id"], label=device["label"])
             for device in self.__local_devices.values()
@@ -117,7 +163,7 @@ class ConfigFlowHandler(ConfigFlow, domain=DOMAIN):
         device_list.append(
             SelectOptionDict(
                 value=DISCOVERY_MANUAL,
-                label="Enter details manually",
+                label=manual_label,
             )
         )
 
@@ -130,7 +176,8 @@ class ConfigFlowHandler(ConfigFlow, domain=DOMAIN):
                     ): SelectSelector(
                         SelectSelectorConfig(
                             options=device_list,
-                            mode=SelectSelectorMode.LIST,
+                            mode=SelectSelectorMode.DROPDOWN,
+                            translation_key=CONF_DISCOVERED_DEVICE,
                         )
                     ),
                 }
