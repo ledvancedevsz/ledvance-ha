@@ -94,7 +94,7 @@
         },
         "discovered_device": {
             "options": {
-                "__manual__": "Adatok megadása kézzel"
+                "manual_input": "Adatok megadása kézzel"
             }
         }
     },

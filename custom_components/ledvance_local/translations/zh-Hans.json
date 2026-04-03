@@ -94,7 +94,7 @@
         },
         "discovered_device": {
             "options": {
-                "__manual__": "手动输入详细信息"
+                "manual_input": "手动输入详细信息"
             }
         }
     },

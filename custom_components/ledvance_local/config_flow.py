@@ -53,7 +53,7 @@ DEVICE_DETAILS_URL = (
     "#finding-your-device-id-and-local-key"
 )
 CONF_DISCOVERED_DEVICE = "discovered_device"
-DISCOVERY_MANUAL = "__manual__"
+DISCOVERY_MANUAL = "manual_input"
 TRANSLATIONS_DIR = Path(__file__).with_name("translations")
 
 

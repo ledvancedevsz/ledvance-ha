@@ -94,7 +94,7 @@
         },
         "discovered_device": {
             "options": {
-                "__manual__": "Masukkan detail secara manual"
+                "manual_input": "Masukkan detail secara manual"
             }
         }
     },

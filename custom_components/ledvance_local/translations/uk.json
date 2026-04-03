@@ -94,7 +94,7 @@
         },
         "discovered_device": {
             "options": {
-                "__manual__": "Введіть дані вручну"
+                "manual_input": "Введіть дані вручну"
             }
         }
     },

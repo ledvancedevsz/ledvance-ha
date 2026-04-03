@@ -341,7 +341,7 @@ async def test_flow_discover_local_manual_fallback_goes_to_local(hass, mocker):
 
     result = await hass.config_entries.flow.async_configure(
         flow["flow_id"],
-        user_input={"discovered_device": "__manual__"},
+        user_input={"discovered_device": config_flow.DISCOVERY_MANUAL},
     )
 
     assert "form" == result["type"]

@@ -94,7 +94,7 @@
         },
         "discovered_device": {
             "options": {
-                "__manual__": "Introduceți detaliile manual"
+                "manual_input": "Introduceți detaliile manual"
             }
         }
     },

@@ -94,7 +94,7 @@
         },
         "discovered_device": {
             "options": {
-                "__manual__": "تفصیلات دستی طور پر درج کریں"
+                "manual_input": "تفصیلات دستی طور پر درج کریں"
             }
         }
     },
