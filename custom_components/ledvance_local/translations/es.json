@@ -91,6 +91,11 @@
                 "manual": "Proporcione manualmente información de conexión del dispositivo.",
                 "cloud_fresh_login": "Configuración del dispositivo asistida por la nube SmartLife con inicio de sesión fresco."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Introducir los datos manualmente"
+            }
         }
     },
     "options": {
@@ -862,7 +867,7 @@
                     "fruit": "Fruta",
                     "intensive": "Intensivo",
                     "rapid": "Rápido",
-                    "eco": "Ecológico",                   
+                    "eco": "Ecológico",
                     "standard": "Estándar",
                     "neutral": "Neutro",
                     "90_minute": "90 minutos",

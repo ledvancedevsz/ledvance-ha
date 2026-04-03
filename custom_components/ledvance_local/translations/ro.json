@@ -91,6 +91,11 @@
                 "manual": "Furnizați manual informațiile de conectare ale dispozitivului.",
                 "cloud_fresh_login": "Configurare dispozitiv asistată de cloud SmartLife cu autentificare nouă."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Introduceți detaliile manual"
+            }
         }
     },
     "options": {

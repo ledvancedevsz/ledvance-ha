@@ -91,6 +91,11 @@
                 "manual": "Fournissez manuellement les informations de connexion de l’appareil.",
                 "cloud_fresh_login": "Configuration de l'appareil assistée par le cloud SmartLife (nouvelle connexion)."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Saisir les détails manuellement"
+            }
         }
     },
     "options": {
@@ -877,7 +882,7 @@
                     "dry": "Séchage",
                     "storage": "Stockage",
                     "light": "Léger",
-                    "pots": "Casseroles"                    
+                    "pots": "Casseroles"
                 }
             },
             "water_hardness": {

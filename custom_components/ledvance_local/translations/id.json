@@ -91,6 +91,11 @@
                 "manual": "Berikan informasi koneksi perangkat secara manual.",
                 "cloud_fresh_login": "Penyiapan perangkat berbantuan cloud SmartLife dengan login baru."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Masukkan detail secara manual"
+            }
         }
     },
     "options": {

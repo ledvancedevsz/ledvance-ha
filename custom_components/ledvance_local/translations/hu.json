@@ -91,6 +91,11 @@
                 "manual": "Adja meg manuálisan az eszköz csatlakozási adatait.",
                 "cloud_fresh_login": "SmartLife felhő által támogatott eszközbeállítás, friss bejelentkezés."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Adatok megadása kézzel"
+            }
         }
     },
     "options": {
@@ -372,7 +377,7 @@
                             "high_steaming": "Magas Steaming",
                             "steaming": "Steaming",
                             "hot_air_baking": "Forró levegős sütés",
-                            "disinfect": "Fertőtlenítés"                            
+                            "disinfect": "Fertőtlenítés"
                         }
                     }
                 }

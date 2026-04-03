@@ -91,6 +91,11 @@
                 "manual": "Ręcznie podaj informacje o połączeniu urządzenia.",
                 "cloud_fresh_login": "Konfiguracja urządzenia SmartLife wspomagana chmurą (świeże logowanie)."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Wprowadź dane ręcznie"
+            }
         }
     },
     "options": {

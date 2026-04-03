@@ -91,6 +91,11 @@
                 "manual": "Ange enhetsanslutningsinformation manuellt.",
                 "cloud_fresh_login": "SmartLife cloud-assisterad enhetskonfiguration med ny inloggning."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Ange uppgifterna manuellt"
+            }
         }
     },
     "options": {

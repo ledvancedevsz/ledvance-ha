@@ -4,6 +4,7 @@ import pytest
 import voluptuous as vol
 from homeassistant.const import CONF_HOST, CONF_NAME
 from homeassistant.data_entry_flow import FlowResultType
+from homeassistant.helpers.selector import SelectSelector, SelectSelectorMode
 from pytest_homeassistant_custom_component.common import MockConfigEntry
 
 from custom_components.ledvance_local import (
@@ -280,6 +281,52 @@ async def test_flow_user_init_starts_with_discover_local(hass, mocker):
 
     assert "form" == result["type"]
     assert "discover_local" == result["step_id"]
+
+
+@pytest.mark.asyncio
+async def test_flow_discover_local_uses_dropdown_selector(hass, mocker):
+    """Test the local discovery step uses a dropdown selector."""
+    mocker.patch(
+        "custom_components.ledvance_local.config_flow.scan_for_devices",
+        return_value=[],
+    )
+
+    result = await hass.config_entries.flow.async_init(
+        DOMAIN, context={"source": "user"}
+    )
+
+    selector = next(iter(result["data_schema"].schema.values()))
+    assert isinstance(selector, SelectSelector)
+    assert selector.config.mode == SelectSelectorMode.DROPDOWN
+
+
+@pytest.mark.asyncio
+async def test_flow_discover_local_selector_uses_translation_key(hass, mocker):
+    """Test the manual discovery option label is translated."""
+    mocker.patch(
+        "custom_components.ledvance_local.config_flow.scan_for_devices",
+        return_value=[],
+    )
+
+    result = await hass.config_entries.flow.async_init(
+        DOMAIN, context={"source": "user"}
+    )
+
+    selector = next(iter(result["data_schema"].schema.values()))
+    assert isinstance(selector, SelectSelector)
+    assert selector.config.translation_key == config_flow.CONF_DISCOVERED_DEVICE
+
+
+def test_selector_option_label_uses_translated_text():
+    """Test selector options can be translated from the integration files."""
+    assert (
+        config_flow.get_selector_option_label(
+            "de",
+            config_flow.CONF_DISCOVERED_DEVICE,
+            config_flow.DISCOVERY_MANUAL,
+        )
+        == "Details manuell eingeben"
+    )
 
 
 @pytest.mark.asyncio

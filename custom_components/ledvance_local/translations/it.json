@@ -91,6 +91,11 @@
                 "manual": "Inserisci manualmente le informazioni sulla connessione del dispositivo.",
                 "cloud_fresh_login": "Configurazione del dispositivo SmartLife assistita da cloud con accesso fresco."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Inserisci i dettagli manualmente"
+            }
         }
     },
     "options": {

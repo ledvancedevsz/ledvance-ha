@@ -91,6 +91,11 @@
                 "manual": "Geben Sie manuell Informationen zur Geräteverbindung an.",
                 "cloud_fresh_login": "Cloud-gestützte Geräteeinrichtung von SmartLife mit einem frischen Login."
             }
+        },
+        "discovered_device": {
+            "options": {
+                "__manual__": "Details manuell eingeben"
+            }
         }
     },
     "options": {
