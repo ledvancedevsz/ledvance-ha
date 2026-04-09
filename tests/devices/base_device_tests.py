@@ -68,9 +68,7 @@ class TuyaDeviceTestCase(IsolatedAsyncioTestCase):
 
     def setUpForConfig(self, config_file, payload):
         """Perform setup tasks for every test."""
-        device_patcher = patch(
-            "custom_components.ledvance.device.TuyaLocalDevice"
-        )
+        device_patcher = patch("custom_components.ledvance.device.TuyaLocalDevice")
         self.addCleanup(device_patcher.stop)
         self.mock_device = device_patcher.start()
         self.dps = payload.copy()

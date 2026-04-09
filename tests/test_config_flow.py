@@ -33,18 +33,14 @@ def auto_enable_custom_integrations(enable_custom_integrations):
 
 @pytest.fixture(autouse=True)
 def prevent_task_creation(mocker):
-    mocker.patch(
-        "custom_components.ledvance.device.TuyaLocalDevice.register_entity"
-    )
+    mocker.patch("custom_components.ledvance.device.TuyaLocalDevice.register_entity")
     yield
 
 
 @pytest.fixture
 def bypass_setup(mocker):
     """Prevent actual setup of the integration after config flow."""
-    mocker.patch(
-        "custom_components.ledvance.async_setup_entry", return_value=True
-    )
+    mocker.patch("custom_components.ledvance.async_setup_entry", return_value=True)
     yield
 
 
@@ -87,9 +83,7 @@ async def test_migrate_entry(hass, mocker):
     mock_device.async_inferred_type = mocker.AsyncMock(
         return_value="goldair_gpph_heater"
     )
-    mocker.patch(
-        "custom_components.ledvance.setup_device", return_value=mock_device
-    )
+    mocker.patch("custom_components.ledvance.setup_device", return_value=mock_device)
 
     entry = MockConfigEntry(
         domain=DOMAIN,
@@ -447,9 +441,7 @@ async def test_flow_user_init_protocol_options_are_strings(hass, mocker):
 @pytest.mark.asyncio
 async def test_async_test_connection_valid(hass, mocker):
     """Test that device is returned when connection is valid."""
-    mock_device = mocker.patch(
-        "custom_components.ledvance.config_flow.TuyaLocalDevice"
-    )
+    mock_device = mocker.patch("custom_components.ledvance.config_flow.TuyaLocalDevice")
     mock_instance = mocker.AsyncMock()
     mock_instance.has_returned_state = True
     mock_instance.pause = mocker.MagicMock()
@@ -474,9 +466,7 @@ async def test_async_test_connection_valid(hass, mocker):
 @pytest.mark.asyncio
 async def test_async_test_connection_for_subdevice_valid(hass, mocker):
     """Test that subdevice is returned when connection is valid."""
-    mock_device = mocker.patch(
-        "custom_components.ledvance.config_flow.TuyaLocalDevice"
-    )
+    mock_device = mocker.patch("custom_components.ledvance.config_flow.TuyaLocalDevice")
     mock_instance = mocker.AsyncMock()
     mock_instance.has_returned_state = True
     mock_instance.pause = mocker.MagicMock()
@@ -502,9 +492,7 @@ async def test_async_test_connection_for_subdevice_valid(hass, mocker):
 @pytest.mark.asyncio
 async def test_async_test_connection_invalid(hass, mocker):
     """Test that None is returned when connection is invalid."""
-    mock_device = mocker.patch(
-        "custom_components.ledvance.config_flow.TuyaLocalDevice"
-    )
+    mock_device = mocker.patch("custom_components.ledvance.config_flow.TuyaLocalDevice")
     mock_instance = mocker.AsyncMock()
     mock_instance.has_returned_state = False
     mock_instance._api = mocker.MagicMock()
