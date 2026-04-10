@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        This form is for reporting a **New Device**.  If you are looking for general help, including cases where you do not see anything in the log, see [Discussions](https://github.com/ledvancedevsz/ledvance-local/discussions).
+        This form is for reporting a **New Device**.  If you are looking for general help, including cases where you do not see anything in the log, see [Discussions](https://github.com/ledvancedevsz/ledvance-ha/discussions).
 
         **Battery powered Wi-fi devices are not compatible with local use, so please do not request support for them even if you are able to use some trick to gather logs.** Long term, any tricks to get them to stay connected will only drain the battery extremely rapidly.
 
