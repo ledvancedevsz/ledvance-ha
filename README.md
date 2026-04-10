@@ -1,7 +1,7 @@
 # Home Assistant LEDVANCE component
 
-Please report any [issues](https://github.com/ledvancedevsz/ledvance-local/issues) and feel free to raise [pull requests](https://github.com/ledvancedevsz/ledvance-local/pulls).
-[Many others](https://github.com/ledvancedevsz/ledvance-local/blob/main/ACKNOWLEDGEMENTS.md) have contributed their help already.
+Please report any [issues](https://github.com/ledvancedevsz/ledvance-ha/issues) and feel free to raise [pull requests](https://github.com/ledvancedevsz/ledvance-ha/pulls).
+[Many others](https://github.com/ledvancedevsz/ledvance-ha/blob/main/ACKNOWLEDGEMENTS.md) have contributed their help already.
 
 This is a Home Assistant integration to support devices running Ledvance
 firmware without going via the Ledvance cloud.  Devices are supported
@@ -81,9 +81,9 @@ to Home Assistant. Other limitations will apply to this, so you might want
 to try both, and only use this integration for devices that are not working
 properly over Matter.
 
-A list of currently supported devices can be found in the [DEVICES.md](https://github.com/ledvancedevsz/ledvance-local/blob/main/DEVICES.md) file.
+A list of currently supported devices can be found in the [DEVICES.md](https://github.com/ledvancedevsz/ledvance-ha/blob/main/DEVICES.md) file.
 
-Documentation on building a device configuration file is in [/custom_components/ledvance/devices/README.md](https://github.com/ledvancedevsz/ledvance-local/blob/main/custom_components/ledvance/devices/README.md)
+Documentation on building a device configuration file is in [/custom_components/ledvance/devices/README.md](https://github.com/ledvancedevsz/ledvance-ha/blob/main/custom_components/ledvance/devices/README.md)
 
 If your device is not listed, you can find the information required to add a configuration for it in the following locations:
 
@@ -111,7 +111,7 @@ follow the [instructions for adding a custom
 repository](https://hacs.xyz/docs/faq/custom_repositories) and then
 the integration will be available to install like any other.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ledvancedevsz&repository=ledvance-local&category=integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ledvancedevsz&repository=ledvance-ha&category=integration)
 
 ## Configuration
 

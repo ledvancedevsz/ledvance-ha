@@ -1,5 +1,5 @@
 {
-    "$id": "https://github.com/ledvancedevsz/ledvance-local/devices/device_config_schema.json",
+    "$id": "https://github.com/ledvancedevsz/ledvance-ha/devices/device_config_schema.json",
     "title": "LEDVANCE Device Configuration Schema",
     "description": "Schema for validating LEDVANCE device configuration files.",
     "type": "object",
